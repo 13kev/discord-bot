@@ -1,5 +1,6 @@
 # discord-bot
 discord bot to welcome new members that arrive at the server and provides random content to keep them entertained
+I'm doing this project as part of a udemy course im attending to create a Discord bot using a node.js module called Discord.js
 
 Initial commits were:
 1 - install npm init
