@@ -32,6 +32,22 @@ const Client = new Discord.Client((
 ));
 ```
 
+## Updates
+Just added login, reply message feature and a command. The reply message will be changed later. Also added a condition so the bot doesn't get into a spiral of self-replying since it can't determine if it's a user or a bot. 
+
+```javascript
+Client.on("messageCreate", (message) => {
+     if (message.author.bot == true){
+          return;
+     }
+
+     if (message.content.toLowerCase() == "!command"){
+          message.reply("Você digitou !command");
+```
+
+
+
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
